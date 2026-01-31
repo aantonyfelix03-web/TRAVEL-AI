@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const originalBtnText = submitBtn.innerHTML;
 
     // REPLACE THIS WITH YOUR ACTUAL N8N WEBHOOK URL
-    const WEBHOOK_URL = 'https://UPDATE_THIS_URL_WITH_YOUR_N8N_WEBHOOK';
+    const WEBHOOK_URL = 'https://antonyfelix.app.n8n.cloud/webhook/0e03dee8-e1e5-467b-86c5-4a5d54bd9d43';
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Check if URL is placeholder
-            if (WEBHOOK_URL.includes('UPDATE_THIS_URL')) {
+            if (WEBHOOK_URL.includes('https://antonyfelix.app.n8n.cloud/webhook/0e03dee8-e1e5-467b-86c5-4a5d54bd9d43')) {
                 throw new Error('Please configure the webhook URL in script.js');
             }
 
@@ -76,3 +76,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
