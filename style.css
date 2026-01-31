@@ -75,8 +75,15 @@ body {
 }
 
 @keyframes float {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(30px, -30px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(30px, -30px);
+    }
 }
 
 .container {
@@ -96,6 +103,7 @@ header h1 {
     font-weight: 700;
     background: linear-gradient(to right, #c084fc, #6366f1);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
 }
@@ -141,7 +149,9 @@ label i {
     color: var(--secondary-color);
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 12px 16px;
     background: var(--input-bg);
@@ -152,7 +162,9 @@ input, select, textarea {
     transition: all 0.3s ease;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     outline: none;
     border-color: var(--primary-color);
     background: rgba(0, 0, 0, 0.4);
@@ -237,8 +249,15 @@ footer {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 600px) {
@@ -246,7 +265,7 @@ footer {
         padding: 1rem;
         width: 100%;
     }
-    
+
     .form-row {
         flex-direction: column;
         gap: 0;
