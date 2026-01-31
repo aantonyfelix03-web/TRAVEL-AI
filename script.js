@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Check if URL is placeholder
-            if (WEBHOOK_URL.includes('https://antonyfelix.app.n8n.cloud/webhook/0e03dee8-e1e5-467b-86c5-4a5d54bd9d43')) {
+            if (WEBHOOK_URL.includes('UPDATE_THIS_URL')) {
                 throw new Error('Please configure the webhook URL in script.js');
             }
 
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         statusMessage.textContent = message;
         statusMessage.className = `status-message ${type}`;
         statusMessage.classList.remove('hidden');
-        
+
         // Auto hide success after 5 seconds
         if (type === 'success') {
             setTimeout(() => {
@@ -76,4 +76,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
