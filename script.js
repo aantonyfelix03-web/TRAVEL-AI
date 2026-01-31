@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const originalBtnText = submitBtn.innerHTML;
 
     // REPLACE THIS WITH YOUR ACTUAL N8N WEBHOOK URL
-    const WEBHOOK_URL = 'https://antonyfelix.app.n8n.cloud/webhook/0e03dee8-e1e5-467b-86c5-4a5d54bd9d43';
+    const WEBHOOK_URL = 'https://antonyfelix.app.n8n.cloud/webhook-test/0e03dee8-e1e5-467b-86c5-4a5d54bd9d43';
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -76,3 +76,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
